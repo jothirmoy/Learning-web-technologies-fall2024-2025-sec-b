@@ -1,0 +1,18 @@
+<employees>
+  <employee_id="1">
+    <name>
+      <frist_name>john</frisrt_name>
+      <last_name>carter</last_name>
+    </name>
+    
+    <address>
+      <house>38</house>
+      <road>3</road>
+      <area>banani</area>
+      <city>dhaka</city>
+    </address>
+
+    <department>sales</department>
+    <salary>20000</salary>
+  </employee_id>
+</employees>
