@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
     <title>Date Validation Form</title>
@@ -22,17 +21,23 @@
     <form method="post" action="">
         <fieldset>
             <legend>DATE</legend>
-            <label for="day">Day (dd):&nbsp;&nbsp;</label>
-            <label for="month">Month (mm):&nbsp;&nbsp;</label>
-            <label for="year">Year (yyyy):&nbsp;&nbsp;</label>
-
-            <br><br>
+            <table>
+                <tr>
+                    <td>
+                    <label for="day">dd &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;</label>
+                    <label for="month">mm &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <label for="year">yyyy &nbsp;&nbsp;</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <input type="text" id="day" name="day" value="<?php echo isset($_POST['day']) ? htmlspecialchars($_POST['day']) : ''; ?>">&nbsp;/
+                    <input type="text" id="month" name="month" value="<?php echo isset($_POST['month']) ? htmlspecialchars($_POST['month']) : ''; ?>">&nbsp;/
+                    <input type="text" id="year" name="year" value="<?php echo isset($_POST['year']) ? htmlspecialchars($_POST['year']) : ''; ?>">
+                    </td>
+                </tr>
+            </table>
             
-            <input type="text" id="day" name="day" value="<?php echo isset($_POST['day']) ? htmlspecialchars($_POST['day']) : ''; ?>">
-            <input type="text" id="month" name="month" value="<?php echo isset($_POST['month']) ? htmlspecialchars($_POST['month']) : ''; ?>">
-            <input type="text" id="year" name="year" value="<?php echo isset($_POST['year']) ? htmlspecialchars($_POST['year']) : ''; ?>">
-
-
             <hr> <!-- Adding a horizontal line -->
             <input type="submit" value="Submit">
         </fieldset>
