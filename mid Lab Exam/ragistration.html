@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Page</title>
+    <style>
+        fieldset {
+            display: inline-block;
+        }
+        legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="register.php">
+        <fieldset>
+            <legend>REGISTRATION</legend>
+        
+            <table>     
+                <tr>
+                    <td>Id:</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="id" value="" required/></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="password" required></td>   
+                </tr>
+                <tr>
+                    <td>Confirm Password:</td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="confrompassword" required></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="name" value="" required/></td>
+                </tr>
+                <tr>
+                    <td>User Type:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="user_type" value="User" required> User  
+                        <input type="radio" name="user_type" value="Admin" required> Admin  
+                    </td> 
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Sign Up" />
+                        <a href="login.html" target="_blank">Sign In</a>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

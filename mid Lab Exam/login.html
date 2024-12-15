@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <title>Login Page</title>
+    <style>
+        fieldset {
+            display: inline-block;
+        }
+        legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="login.php">
+        <fieldset>
+            <legend>LOGIN</legend>
+            <table>
+                <tr>
+                    <td>User Id:</td>
+                    
+                </tr>
+                <tr>
+                    <td><input type="text" name="UserId" required></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Login">
+                    <a href="ragistration.html" target="_blank"> Rgister </a></td>
+                </tr>
+            </table>
+        </fieldset>
+</body>
+</html>
