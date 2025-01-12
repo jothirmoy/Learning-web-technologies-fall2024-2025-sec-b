@@ -3,7 +3,7 @@
 $host = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "Aljax";
+$dbname = "shop";
 
 function dbConnect(){
     // global $host;
