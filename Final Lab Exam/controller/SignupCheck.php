@@ -24,7 +24,7 @@ if (
     
     $status = createUser($username, $password, $email, $dob, $phone, $gender, $blood_group);
     if ($status) {
-        header('location: ../view/UserLogin.php');
+        header('location: ../view/AdminLogin.php');
     } else {
         echo "Database error. Please try again.";
     }
