@@ -42,8 +42,8 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`username`, `password`, `email`, `code`, `phone`, `role`, `address`) VALUES
-('Yash', 12345, 'yash@gmail.com', 123456, '01738360522', 'Administrator', 'Banani'),
-('Rohan', 12345, 'rohan@gmail.com', 654321, '01834070547', 'Controller', 'Mirpur ');
+('sarker', 12345, 'sarker@gmail.com', 123456, '0123456789', 'Administrator', 'Banani'),
+('sarker', 12345, 'sarker@gmail.com', 654321, '0123456789', 'Controller', 'Mirpur ');
 
 -- --------------------------------------------------------
 
